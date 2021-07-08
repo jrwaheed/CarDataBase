@@ -8,8 +8,11 @@ public class CarTester {
 
         for (Car car: cars) {
             System.out.println(car.getId() + car.getModel() + car.getPrice());
-
         }
+
+        Car car1 = new Car(0,"Tesla",100000);
+        dao.addCar(car1);
+
 
     }
 }
